@@ -1,0 +1,1575 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+/*  P   A   G   E  -- 1   */
+
+#container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    
+}
+
+/* --------------S  I  D  E  B  A  R----------------- */
+
+#sidebar{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #11192a;
+}
+
+
+.logo{
+    padding: 30px;
+}
+
+.logo a>img{
+    
+    width: 100px;
+    height: 30px;
+
+}
+
+.bar-button{
+    width: 100%;   
+}
+
+
+.bar-button > a{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-decoration: none;
+    color: gray;
+    padding-left: 40px;
+}
+
+
+.bar-button a>i{
+    padding:5px 20px 5px 5px;
+}
+
+
+.bar-button p{
+    color: grey;
+    font-family:  sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 15px;
+}
+
+.bar-button a:hover{
+    background-color: rgb(235, 231, 231);
+    
+}
+
+
+
+/*   M  A   I  N ---------- S  E   C  T  I  O  N ----------  */
+
+
+#main{
+    width: 80%;
+    height: 100%;
+    position: relative;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    background-color: #edf0f2;
+
+}
+
+/* -----------   N   A   V -------------------*/
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #5e72e4;
+    padding: 15px 24px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 80%;
+    /* border: 1px solid #000; */
+}
+
+#photo >img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.toggle{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* border: 1px solid #000; */
+}
+
+
+
+.toggle>input{
+    padding: 15px;
+    border-radius: 30px;
+    width: 280px;
+    height: 50px;
+    border: none;
+    outline: none;
+}
+
+
+.nav-logo{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    /* border: 1px solid #000; */
+    
+}
+
+.nav-logo a{
+    color: white;
+}
+
+.nav-logo a:hover{
+    color:rgb(223, 208, 208);
+}
+
+
+
+
+/* --------------  C   A   R   D  ------------------*/
+
+
+#dashboard{
+    margin-top: 80px;
+    width: 100%;
+}
+
+
+.card{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+    /* border: 1px solid #000; */
+    background-color:#5d73eb;    
+}
+
+.card-content{
+    /* border: 1px solid #000; */
+    width: 280px;
+    height: 130px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+
+}
+
+.card-name p{
+    margin-bottom: 12px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card-name h5{
+    color: grey;
+    font-size: 14px;
+    margin-bottom: 7px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.card-content span >i{
+    color:green;
+    padding: 5px;
+}
+
+.card-content span{
+    font-size: 16px;
+    color: grey;
+}
+
+.card-logo i{
+    font-size: 24px;
+    color:blueviolet;
+}
+
+
+.card-content:hover{
+    scale: 1.1;
+    transition: 1s;
+   
+}
+
+
+/* -------------------C  H  A  R  T ------------------- */
+
+.chart{
+    width: 100%;
+    height: 400px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color:#edf0f2;
+    
+}
+
+.graph{
+    width: 60%;
+     height: 100%;
+    /* border: 1px solid #000; */
+    border-radius: 5px;
+    background-color: #2b313a;
+   
+}
+
+.graph-heading{
+    padding: 14px;
+    background-color:#3b4048;
+    border-radius: 5px;   
+}
+
+.graph-heading h4{
+    color: rgb(193, 182, 182);
+    font-size: 12px;
+   
+}
+
+.graph-heading p{
+    color: white;
+    font-size: 18px;
+}
+
+#calendar{
+    width: 30% ;
+    height: 100%;
+    border-radius: 5px;
+    /* background-color: #1a4da4; */
+}
+
+
+.chart-2{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid #000; */
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color:#edf0f2;
+}
+
+.graph-2{
+    width: 60%;
+    height: 400px;
+    /* border: 1px solid #000; */
+    border-radius: 5px;
+    background-color: white;
+    color: grey;
+    
+}
+
+.graph-2 h3{
+    padding: 20px;
+    border-bottom: 1px solid #d3c9c9;
+    color: #000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.histo-graph-2{
+    width: 30%;
+    height: 400px;
+    /* border: 1px solid #000; */
+    border-radius: 5px;
+    background-color: white;
+    color: grey;
+}
+
+.histo-graph-2 table{
+    width: 100%;
+    text-align: left;
+}
+
+
+.histo-graph-2 h3{
+    padding: 20px;
+    border-bottom: 1px solid #d3c9c9;
+    color: #000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+.histo-graph-2 table th{
+    padding: 12px 24px;
+}
+
+
+
+.histo-graph-2 table td{
+    padding: 12px 24px;
+}
+
+
+.graph-2 > table{
+    width: 100%;
+    text-align: left;
+    
+}
+
+.graph-2 table th{
+    padding: 12px 24px;
+    
+}
+
+.graph-2 table td{
+    padding: 12px 24px;
+}
+
+
+
+/* ------------------- F  O  O  T  E  R------------ */
+
+footer{
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    color: #5e72e4;
+    background-color:#edf0f2 ;
+    /* border: 1px solid #000; */
+}
+
+
+/* ----------------  P  A  G  E  -  2  ----------------- */
+/* ---------------- I  C  O  N  S ---------------------- */
+
+#icons{
+    margin-top: 80px;
+    background-color:#edf0f2;
+
+}
+
+.multiple-icon{
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-inline: 22px;
+    border-radius: 7px;
+    background-color: white;
+    /* border: 1px solid #000; */
+    transform: translateY(-5%);
+   
+}
+
+
+.icon-heading h3{
+    /* border: 1px solid #000; */
+    padding: 16px 20px;
+    border-bottom: 1px solid #dbd7d7;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.icon-content{
+    padding: 14px;
+    height: auto;
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.icon-name{
+    width: 23%;
+    /* border: 1px solid #000; */
+    border-radius: 5px;
+    background-color: #f2f3f5;
+
+}
+
+.icon-name>a{
+    /* border: 1px solid #000; */
+    width: 100%;
+    display: block;
+    padding: 14px;
+    text-decoration: none;
+    color: black;
+}
+
+.icon-name a>i{
+    font-size: 20px;
+    padding: 10px;
+    color:rgb(88, 88, 230);
+}
+
+.icon-name>a:hover{
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, .1) 0 0 0 1px, rgba(0, 0, 0, .1) 0 4px 16px;
+    border-radius: 5px;
+}
+
+
+
+
+
+/* -------------------- G  O  O  G  L  E  ------------------- */
+
+
+#google{
+    margin-top: 80px;
+    background-color: #edf0f2;
+}
+
+.g-main{
+    height: 180px;
+    /* border: 1px solid #000; */
+    background-color:#5469e1;
+    padding: 15px 24px 70px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+.g-content h3{
+    display: inline-block;
+    margin-right: 20px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+}
+
+.g-content a{
+    /* border: 1px solid #000; */
+    padding: 14px;
+    background-color: white;
+    text-decoration: none;
+    border-radius: 7px;
+    color:#5e72e4;
+}
+
+
+
+.g-button a{
+    /* border: 1px solid #000; */
+    padding:14px ;
+    text-decoration: none;
+    border-radius: 7px;
+    color:#5e72e4;
+    background-color: white;
+    margin-right: 10px;
+    
+}
+
+.g-button a:hover{
+    background-color: #edf0f2;
+}
+
+/* -------------------M  A  P  S ----------------------------- */
+
+
+.g-map{
+    display: flex;
+    justify-content: center;
+    padding-inline: 0px 24px 0px 24px;
+    /* border: 1px solid #000; */
+    height: 600px;
+    position: relative;
+    
+}
+
+.g-location{
+    /* border: 1px solid #000; */
+    width: 90%;
+    position: absolute;
+    top: 0;
+    height: 500px;
+    transform: translateY(-10%);
+    border-radius: 7px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.g-location iframe{
+    border-radius: 5px;
+}
+
+/* --------------------- P  A  G  E  4 /  P  R  O  F  I  L  E ------------------- */
+
+
+
+#profile{
+    margin-top: 80px;
+    
+}
+
+.banner{
+    /* border: 1px solid #000; */
+    height: 500px;
+    background-image: url(./img/profile-cover.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+
+.main-box{
+    /* border: 1px solid #000; */
+    width: 40%;
+    height: 200px;
+    position: absolute;
+    left: 4%;
+    top: 20%;
+    padding: 10px;
+}
+
+.main-box h1{
+    margin-bottom: 10px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main-box p{
+    width: 90%;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.main-box a{
+    text-decoration: none;
+    /* border: 1px solid #000; */
+    padding: 14px;
+    border-radius: 5px;
+    background-color: white;
+    color:#1a4da4;
+}
+
+/* ------------------ F  O  R  M ----------------- */
+
+.form-box{
+    /* border: 1px solid #000; */
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    transform: translateY(70%);
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    bottom: 0;
+}
+
+.form-username{
+    /* border: 1px solid #000; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 15px;
+    border-bottom: 1px solid rgb(106, 103, 103);
+    margin-bottom: 10px;
+}
+
+.form-username .label{
+    width: 45%;
+    /* border: 1px solid #000; */
+}
+
+
+.form{
+    /* border: 1px solid #000; */
+    width: 65%;
+    height: 750px;
+    background-color:white;
+    padding: 12px;
+    border-radius: 5px;
+    
+}
+
+.form h3{
+    /* border: 1px solid #000; */
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+}
+
+.form p{
+    /* border: 1px solid #000; */
+    padding: 10px;
+    font-size: 12px;
+    color: grey;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 8px;
+}
+
+
+
+.label label{
+
+    font-size: 20px;
+    color: rgb(44, 43, 43);
+    /* border: 1px solid #000; */
+    padding: 10px;
+}
+
+.label input{
+    width: 100%;
+    padding: 14px;
+    border: 1px solid grey;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+
+.about-me{
+    padding: 15px;
+}
+
+
+.about-me label{
+    /* border: 1px solid #000; */
+    margin-bottom: 15px;
+    font-family:Verdana, sans-serif;
+}    
+
+.about-me>textarea{
+    margin-top: 15px;
+    border: 1px solid #cbc6c6;
+    width: 100%;
+    height: 70px;
+    padding: 10px;
+    outline: none;
+}
+
+
+/* ------------------P  R  O  F  I  L  E  -- C  A  R  D----------- */
+
+
+.p-card{
+    /* border: 1px solid #000; */
+    width: 30%;
+    height: 420px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.photo-section{
+    width: 100%;
+    height: 150px;
+    /* border: 1px solid #000; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-image: url(./img/card-img.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.photo{
+    width: 80px;
+    height: 80px;
+    border: 3px solid #ffffff;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+    border-radius: 50%;
+}
+
+.photo>img{
+    border-radius: 50%;
+}
+
+.p-content{
+    /* border: 1px solid #000; */
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.b-1{
+    /* border: 1px solid #000; */
+    width: 80px;
+    height: 70px;
+    text-align: center;
+    padding: 8px;
+    
+}
+
+
+.b-1 h3{
+    color: #8c94b6;
+}
+
+.b-1 p{
+    color: gray;
+}
+
+
+
+.p-col2{
+    /* border: 1px solid #000; */
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    
+}
+
+
+.p-col2 p{
+    color:rgb(110, 110, 110);
+    padding: 5px;
+}
+
+.p-col2 h4{
+    color:rgb(157, 155, 155);
+}
+
+
+/* --------------- P  A  G  E  5  /  T  A  B  L  E ---------------------- */
+
+#table{
+    margin-top: 80px;
+}
+
+
+
+.table-main{
+    height: 180px;
+    /* border: 1px solid #000; */
+    background-color:#5469e1;
+    padding: 15px 24px 70px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+.table-content h3{
+    display: inline-block;
+    margin-right: 20px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+}
+
+.table-content a{
+    /* border: 1px solid #000; */
+    padding: 14px;
+    background-color: white;
+    text-decoration: none;
+    border-radius: 7px;
+    color:#5e72e4;
+}
+
+
+
+.table-button a{
+    /* border: 1px solid #000; */
+    padding:14px ;
+    text-decoration: none;
+    border-radius: 7px;
+    color:#5e72e4;
+    background-color: white;
+    margin-right: 10px;
+    
+}
+
+.table-button a:hover{
+    background-color: #edf0f2;
+}
+
+
+.table-box{
+    /* border: 1px solid #000; */
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.table-col{
+    /* border: 1px solid #000; */
+    width: 90%;
+    height: 550px;
+    transform: translateY(-10%);
+    padding: 18px;
+    background-color: white;
+    border-radius: 7px;
+}
+
+.table-col h3{
+    
+    padding: 5px 14px;
+    color: #3565b8;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+   
+}
+
+
+#th-title {
+    color: gray;
+    font-size: 12px;
+}
+
+.table-col>table{
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    
+}
+
+.table-col table tr{
+    border-bottom: 1px solid #ddd;
+}
+
+.table-col table th,td {
+    padding: 14px 20px;
+}
+
+
+.table-col table td{
+    color: gray;
+}
+
+#th-icon img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#th-icon span{
+    /* border: 1px solid #000; */
+    padding-inline: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+}
+
+
+.media{
+    display: flex;
+    align-items: center;
+    /* border: 1px solid #000; */
+}
+
+
+/* ------------  P  A  G  E  6  /  L  O  G  I  N --------------------- */
+
+#login{
+    margin-top: 80px;
+    background-color: #5469e1;
+}
+
+.login-nav{
+    padding: 14px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+
+
+.login-logo a>img {
+    /* border: 1px solid #000; */
+   width: 100px;
+   padding: 15px ;
+   background-color: white;
+   border-radius: 5px;
+}
+
+
+
+.login-button a{
+    color: white;
+    font-size: 18px;
+    /* border: 1px solid #000; */
+    padding: 14px;
+    border-radius: 50%;
+}
+
+.login-button > button{
+    padding: 14px ;
+    background-color: white;
+    color:#5469e1;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.login-button a:hover{
+    background-color: rgb(16, 16, 16);
+}
+
+
+
+/* -------------H E A D I N G--------------- */
+
+
+.head{
+    text-align: center;
+    padding-block: 100px;
+    /* border: 1px solid #000; */
+    
+}
+
+.head h1{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+
+.head p{
+    color: rgb(201, 194, 194);
+    font-size: 16px;
+}
+
+
+
+/*------------- F O R M  -----------------  */
+
+.form-main{
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid #000; */
+    background-color: #172b4d;
+}
+
+
+.login-form{
+    width: 350px;
+    height: auto;
+    /* border: 1px solid #000; */
+    transform: translateY(-10%);
+       
+}
+
+.form-logo{
+    text-align: center;
+    padding: 20px;
+    /* border: 1px solid #000; */
+    background-color: white;
+    height: 140px;
+    
+}
+
+.form-logo p{
+    color: grey;
+    margin-bottom: 20px;
+    /* border: 1px solid #000; */
+}
+
+
+.form-logo a{
+    /* border: 1px solid #000; */
+    padding: 14px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, .1) 0 0 0 2px, rgba(0, 0, 0, .1) 0 4px 16px;
+    text-decoration: none;
+    margin-right:5px;
+    color: #1a4da4;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.form-logo a>i{
+    padding: 8px;
+    color: #000;
+}
+
+.login-info{
+    background-color: white;
+    padding: 30px;
+}
+
+.login-info-head p{
+    text-align: center;
+    margin-bottom: 20px;
+    color: gray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-info-form {
+  
+    padding: 10px;
+}
+
+.info-content{
+    margin-bottom: 10px;    
+}
+
+.info-content i{
+    padding: 10px;
+}
+
+.info-content input{
+    padding: 10px;
+    width: 80%;
+    border: 1px solid rgb(192, 183, 183);
+    background-color: transparent;
+    outline: none;
+}
+
+
+.checkbox input {
+    accent-color: white;
+    border: 1px solid #000;
+    margin-right: 5px;
+}
+
+.login-info-button{
+    text-align: center;
+    /* border: 1px solid #000; */
+    padding: 18px;
+}
+
+.login-info-button a{
+    text-decoration: none;
+    /* border: 1px solid #000; */
+    padding:14px;
+    background-color:#3949a4 ;
+    color: white;
+    border-radius: 7px;
+}
+
+#ft-login{
+    color: white;
+    background-color: #172b4d;
+    
+}
+
+
+
+/*------------------P  A  G  E  7  /  R  E  G  I  S  T  E  R-------------  */
+
+#register{
+    margin-top: 80px;
+    background-color: #07080c;
+}
+
+
+.register-nav{
+    padding: 14px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+
+
+.register-logo a>img {
+    /* border: 1px solid #000; */
+   width: 100px;
+   padding: 15px ;
+   background-color: white;
+   border-radius: 5px;
+}
+
+
+
+.register-button a{
+    color: white;
+    font-size: 18px;
+    /* border: 1px solid #000; */
+    padding: 14px;
+    border-radius: 50%;
+}
+
+.register-button > button{
+    padding: 14px ;
+    background-color: white;
+    color:#5469e1;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.register-button a:hover{
+    background-color: rgb(34, 33, 33);
+}
+
+
+/* --------H  E  A  D  I  N  G ------------ */
+
+.regis-head{
+    text-align: center;
+    padding-block: 100px;
+    /* border: 1px solid #000; */
+    
+}
+
+.regis-head h1{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+
+.regis-head p{
+    color: rgb(201, 194, 194);
+    font-size: 16px;
+}
+
+
+/* ---------- R E G I S T E R / F O R M -------------- */
+
+
+.register-main{
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid #000; */
+    background-color: #172b4d;
+}
+
+
+.register-form{
+    width: 50%;
+    height: auto;
+    /* border: 1px solid #000; */
+    transform: translateY(-10%);
+       
+}
+
+.regis-logo{
+    text-align: center;
+    padding: 20px;
+    /* border: 1px solid #000; */
+    background-color: white;
+    height: 140px;
+    
+}
+
+.regis-logo p{
+    color: grey;
+    margin-bottom: 20px;
+    /* border: 1px solid #000; */
+}
+
+
+.regis-logo a{
+    /* border: 1px solid #000; */
+    padding: 14px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, .1) 0 0 0 2px, rgba(0, 0, 0, .1) 0 4px 16px;
+    text-decoration: none;
+    margin-right:5px;
+    color: #1a4da4;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.regis-logo a>i{
+    padding: 8px;
+    color: #000;
+}
+
+/*-------  F O R M --- C O N T E N T --------------- */
+
+.register-info{
+    background-color: white;
+    padding: 60px;
+    /* border: 1px solid #000; */
+}
+
+.register-info-head p{
+    text-align: center;
+    margin-bottom: 30px;
+    color: gray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.register-info-form{
+    display: flex;
+    /* border: 1px solid #000; */
+    margin-bottom: 18px;
+}
+
+.register-info-content{
+    padding: 10px;
+}
+
+
+.register-info-input{
+    width: 100%;
+}
+
+
+.register-info-input span>input{
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    outline:none;
+    border: 1px solid rgb(229, 225, 225);
+}
+
+
+.register-checkbox{
+    margin-bottom: 16px;
+    /* border: 1px solid #000; */
+}
+
+.register-checkbox input {
+    accent-color: white;
+    /* border: 1px solid #000; */
+    margin-right: 5px;
+}
+
+.register-checkbox label>a{
+    text-decoration: none;
+    color: #1a4da4;
+}
+
+.register-info-button{
+    text-align: center;
+    /* border: 1px solid #000; */
+    padding: 18px;
+}
+
+.register-info-button a{
+    text-decoration: none;
+    /* border: 1px solid #000; */
+    padding:14px;
+    background-color:#3949a4 ;
+    color: white;
+    border-radius: 7px;
+}
+
+#ft-register{
+    color: white;
+    background-color: #172b4d;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------- M  E  D  I  A ----Q  U  E  R  Y----------- */
+
+@media (max-width:600px){
+
+    .popup{
+        position: absolute;
+        top: 50%;
+        left: auto;
+        margin: auto;
+    }
+
+    #main{
+        width: 100% !important;
+    }
+    .nav{
+        width: 100% !important;
+    }
+    
+    #sidebar{
+        background-color:white;
+        position: absolute;
+        z-index: 15;
+        width: 60%;
+    }
+
+    .nav{
+        display:flex;
+    }
+
+    
+    .toggle input{
+        display: none;
+    }
+
+   /* D A S H B O A R D */
+
+   #dashboard{
+    margin-top: 65px;
+   }
+
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 550px;
+        gap: 20px;
+        padding-block: 10px;
+        padding-inline: 20px;
+    }
+
+    .card-content{
+        height: 100px;
+        align-items: center;
+        width: 100%;
+    }
+
+
+
+    .chart{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+    }
+
+    .graph{
+        width: auto;
+        height: 400px;
+        margin-bottom: 10px;
+        padding: 4px;
+    }
+  
+    #calendar{
+        width: auto;
+        
+    }
+
+    .chart-2{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .graph-2{
+        width:auto;
+        overflow-x: scroll;
+    }
+
+    
+
+    .histo-graph-2{
+        width: auto;
+    }
+
+    footer{
+        display:block;
+        justify-content: center;
+        text-align: center;
+        /* border: 1px solid #000; */
+        font-size: 14px;
+    }
+
+
+    /* ------ I  C  O  N  S  --------------- */
+
+    #icons{
+        margin-top: 65px;
+     }
+    
+
+
+    .multiple-icon{
+        transform: translateY(-1%);
+        padding-inline: 15px;
+    }
+
+    .icon-content{
+        display:flex;
+        flex-direction: column;
+        gap: 10px;
+    
+    }
+
+    .icon-name{
+        width: 100%;
+    }
+
+
+    /* ----- G O O G L E -------------- */
+
+    #google{
+        margin-top: 65px;
+       }
+    
+
+   .g-content a{
+    display: none;
+   }
+
+
+   .g-button a{
+    padding: 10px;
+   }
+
+
+   /* ------- P R O F I L E ----------- */
+
+   #profile{
+    margin-top: 65px;
+   }
+
+
+   .main-box{
+    height: 250px;
+    width: 90%;
+    /* border: 1px solid #000; */
+   }
+
+  .form-box{
+    height: auto;
+    /* border: 1px solid #000; */
+    flex-direction: column-reverse;
+    transform: translateY(90%);
+  }
+
+
+  .form{
+    width: 90%;
+    margin: auto;
+    height: auto;
+  }
+
+  .p-card{
+    width: 90%;
+    margin: auto;
+  }
+
+  .form-username{
+    /* border: 1px solid #000; */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-username .label{
+    width: 100%;
+  }
+
+
+  /* ------- T A B L E ------------------ */
+
+
+  #table{
+    margin-top: 65px;
+   }
+
+
+  .table-content a{
+    display: none;
+  }
+
+  .table-button a{
+    padding: 10px;
+  }
+
+  .table-col{
+    overflow-x: scroll;
+  }
+
+
+
+  /* ---- L O G I N ------------------- */
+
+ #login{
+    margin-top: 65px;
+ }
+
+
+
+.login-button{
+    display: none;
+}
+
+.head{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 90px;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+.head h1{
+    /* border: 1px solid #000; */
+    font-size: 24px;
+}
+
+.head p{
+    font-size: 12px;
+}
+
+
+/* -------- R E G I S T E R ---------- */
+
+#register{
+    margin-top: 65px;
+   }
+
+
+
+.register-button{
+    display: none;
+}
+
+.regis-head{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 90px;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+
+.regis-head h1{
+    /* border: 1px solid #000; */
+    font-size: 24px;
+}
+
+.regis-head p{
+    font-size: 12px;
+}
+
+
+.register-form{
+    width: 320px;
+}
+
+.register-info{
+    padding: 40px;
+}
+
+
+
+
+
+}

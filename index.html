@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style/calender.js.css">
+    <title>Admin panel</title>
+</head>
+<body>
+    
+
+<!------------------- S  I  D  E  B  A  R  ------------------------------->
+<div id="container">
+    <div class="hidden" id="sidebar">
+        <div class="logo">
+            <a href="">
+                <img width="100%" height="100%" src="./img/logojquerywebp.webp" alt="">
+            </a>
+        </div>
+        <div class="bar-button">
+            <a href="" for="#dashboard"><i class="fa-solid fa-tv"></i>Dashboard</a>
+            <a href="" for="#icons"><i class="fa-solid fa-sun"></i>Icons</a>
+            <a href="" for="#google"><i class="fa-solid fa-location-dot"></i>Google</a>
+            <a href="" for="#profile"><i class="fa-solid fa-user"></i>Profile</a>
+            <a href="" for="#table"><i class="fa-solid fa-list"></i>Tables</a>
+            <a href="" for="#login"><i class="fa-solid fa-right-to-bracket"></i>Login</a>
+            <a href="" for="#register"><i class="fa-solid fa-user"></i>Register</a>
+            <hr>
+            <p>RESOURCE</p>
+            <a href=""><i class="fa-solid fa-palette"></i>Product Info</a>
+            <a href=""><i class="fa-solid fa-rocket"></i>Docs</a>
+        </div>
+    </div>
+
+
+
+
+<!----------------------- M  A  I  N ------------------------>
+
+    <div id="main">
+        
+        <div class="nav">
+            <div class="toggle">
+            <input type="text" placeholder="Search" >
+            </div>
+            <div class="nav-logo">
+                <a href="" id="pop-bell"><i class="fa-solid fa-bell"></i></a>
+                <a href=""><i class="fa-solid fa-clone"></i></a>
+                <a href="" id="photo"><img src="./img/navlogo.jpg" alt=""></a>
+                <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+            </div>
+        </div>
+        
+
+        <!------------------- P  A  G  E  1 / D A S H B O A R D    ---------------------->
+
+        <div id="dashboard">
+           
+            <div class="card">
+                <!------------ C  A  R  D -1      --------- -->
+                <div class="card-content">
+                    <div class="card-name">
+                        <h5>TOTAL TRAFFIC</h5>
+                        <p>3,78,990</p>
+                        <span><i class="fa-solid fa-arrow-up"></i>3.5% Since last month</span>
+                    </div>
+                    <div class="card-logo">
+                        <i class="fa-solid fa-hand-point-up"></i>
+                    </div>  
+                </div>
+    
+                <!------------ C  A  R  D 2-------------->
+    
+                <div class="card-content">
+                    <div class="card-name">
+                        <h5>NEW USER</h5>
+                        <p>3990</p>
+                        <span><i class="fa-solid fa-arrow-up"></i>3.5% Since last month</span>
+                    </div>
+                    <div class="card-logo">
+                        <i class="fa-solid fa-users"></i>
+                    </div> 
+                </div>
+    
+                <!-------------C  A  R  D 3 ------------->
+    
+                <div class="card-content">
+                    <div class="card-name">
+                        <h5>SALES</h5>
+                        <p>2356</p>
+                        <span><i class="fa-solid fa-arrow-up"></i>3.5% Since last month</span>
+                    </div>
+                    <div class="card-logo">
+                        <i class="fa-solid fa-money-check-dollar"></i>
+                    </div> 
+                </div>
+    
+                <!-------- C  A  R  D  4  -------------->
+    
+                <div class="card-content">
+                    <div class="card-name">
+                        <h5>PERFORMANCE</h5>
+                        <p>39%</p>
+                        <span><i class="fa-solid fa-arrow-up"></i>3.5% Since last month</span>
+                    </div>
+                    <div class="card-logo">
+                        <i class="fa-solid fa-chart-simple"></i>
+                    </div> 
+                </div>
+            </div>
+
+            <!--------------------C  H  A  R  T  --------------------->
+            
+            <div class="chart">
+                <div class="graph"></div>
+                <div id="calendar"></div>
+            </div>
+            <div class="chart-2">
+                <div class="graph-2">
+                    <h3>Page Visit</h3>
+                    <table>
+                        <tr id="tr1">
+                            <th>Page Name </th>
+                            <th>Visitor </th>
+                            <th>Unique User </th>
+                            <th>Bounce rate </th>
+                        </tr>
+                        <tr>
+                            <th>/argon/</th>
+                            <td>4,569</td>
+                            <td>340</td>
+                            <td>46,53%</td>
+                        </tr>
+                        <tr>
+                            <th>/argon/</th>
+                            <td>4,569</td>
+                            <td>340</td>
+                            <td>46,53%</td>
+                        </tr>
+                        <tr>
+                            <th>/argon/</th>
+                            <td>4,569</td>
+                            <td>340</td>
+                            <td>46,53%</td>
+                        </tr>
+                        <tr>
+                            <th>/argon/</th>
+                            <td>4,569</td>
+                            <td>340</td>
+                            <td>46,53%</td>
+                        </tr>
+                        <tr>
+                            <th>/argon/</th>
+                            <td>4,569</td>
+                            <td>340</td>
+                            <td>46,53%</td>
+                        </tr>
+                        <tr>
+                            <th>/argon/</th>
+                            <td>4,569</td>
+                            <td>340</td>
+                            <td>46,53%</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="histo-graph-2">
+                    <table>
+                        <h3>Social Traffic</h3>
+                        <tr>
+                            <th>Referal</th>
+                            <th>Visitor</th>
+                        </tr>
+                        <tr>
+                            <th>Facebook</th>
+                            <td>1,480</td>
+                        </tr>
+                        <tr>
+                            <th>Facebook</th>
+                            <td>1,480</td>
+                        </tr>
+                        <tr>
+                            <th>Facebook</th>
+                            <td>1,480</td>
+                        </tr>
+                        <tr>
+                            <th>Facebook</th>
+                            <td>1,480</td>
+                        </tr>
+                        <tr>
+                            <th>Facebook</th>
+                            <td>1,480</td>
+                        </tr>
+                        <tr>
+                            <th>Facebook</th>
+                            <td>1,480</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        
+            <!-------------- F  O  O  T  E  R --------------------->
+            <footer>
+                <h4>Argon Dashboard Flask</h4>
+                <h4>@ Creative-Tim - coded by Appspeed</h4>
+            </footer>
+        </div>
+
+
+        <!-------------------P   A  G  E  2  / I C O N  --------------------------------->
+
+
+        <div id="icons">
+            
+                <!------------ C  A  R  D -1      --------- -->
+                <div class="card">
+                <div class="card-content">
+                    <div class="card-name">
+                        <h5>TOTAL TRAFFIC</h5>
+                        <p>3,78,990</p>
+                        <span><i class="fa-solid fa-arrow-up"></i>3.5% Since last month</span>
+                    </div>
+                    <div class="card-logo">
+                        <i class="fa-solid fa-hand-point-up"></i>
+                    </div>  
+                </div>
+    
+                <!------------ C  A  R  D  2-------------->
+    
+                <div class="card-content">
+                    <div class="card-name">
+                        <h5>NEW USER</h5>
+                        <p>3990</p>
+                        <span><i class="fa-solid fa-arrow-up"></i>3.5% Since last month</span>
+                    </div>
+                    <div class="card-logo">
+                        <i class="fa-solid fa-users"></i>
+                    </div> 
+                </div>
+    
+                <!-------------C  A  R  D  3 ------------->
+    
+                <div class="card-content">
+                    <div class="card-name">
+                        <h5>SALES</h5>
+                        <p>2356</p>
+                        <span><i class="fa-solid fa-arrow-up"></i>3.5% Since last month</span>
+                    </div>
+                    <div class="card-logo">
+                        <i class="fa-solid fa-money-check-dollar"></i>
+                    </div> 
+                </div>
+    
+                <!-------- C  A  R  D  4  -------------->
+    
+                <div class="card-content">
+                    <div class="card-name">
+                        <h5>PERFORMANCE</h5>
+                        <p>39%</p>
+                        <span><i class="fa-solid fa-arrow-up"></i>3.5% Since last month</span>
+                    </div>
+                    <div class="card-logo">
+                        <i class="fa-solid fa-chart-simple"></i>
+                    </div> 
+                </div>
+            </div>
+
+            <!--------------------  I  C  O  N  S  --------->
+
+            <div class="multiple-icon">
+                <div class="icon-heading">
+                    <h3>Icons</h3>
+                </div>
+                <div class="icon-content">
+                    <div class="icon-name">
+                        <a href="">
+                            <i class="fa-regular fa-image"></i> Air-ballon
+                        </a>
+                    </div>
+                    <div class="icon-name">
+                        <a href="">
+                            <i class="fa-solid fa-truck-medical"></i> Ambulance
+                        </a>
+                    </div>
+                    <div class="icon-name">
+                        <a href="">
+                            <i class="fa-solid fa-basket-shopping"></i> Basket
+                        </a>
+                    </div>
+                    <div class="icon-name">
+                        <a href="">
+                            <i class="fa-solid fa-atom"></i> Atom
+                        </a>
+                    </div>
+                    <div class="icon-name">
+                        <a href="">
+                            <i class="fa-solid fa-building"></i> Building
+                        </a>
+                    </div>
+                    <div class="icon-name">
+                        <a href="">
+                            <i class="fa-solid fa-align-left"></i> Align-left
+                        </a>
+                    </div>
+                    <div class="icon-name">
+                        <a href="">
+                            <i class="fa-solid fa-arrow-up"></i> Arrow up
+                        </a>
+                    </div>
+                    <div class="icon-name">
+                        <a href="">
+                            <i class="fa-solid fa-cart-shopping"></i> Cart
+                        </a>
+                    </div>
+                    <div class="icon-name">
+                        <a href="">
+                            <i class="fa-solid fa-headphones"></i> Headphone
+                        </a>
+                    </div>
+                    <div class="icon-name">
+                        <a href="">
+                            <i class="fa-solid fa-laptop"></i> Laptop
+                        </a>
+                    </div>
+                    <div class="icon-name">
+                        <a href="">
+                            <i class="fa-solid fa-credit-card"></i> Credit-card
+                        </a>
+                    </div>
+                    <div class="icon-name">
+                        <a href="">
+                            <i class="fa-solid fa-gear"></i> Setting
+                        </a>
+                    </div>
+                    <div class="icon-name">
+                        <a href="">
+                            <i class="fa-solid fa-headphones"></i> Headphone
+                        </a>
+                    </div>
+                    <div class="icon-name">
+                        <a href="">
+                            <i class="fa-solid fa-laptop"></i> Laptop
+                        </a>
+                    </div>
+                    <div class="icon-name">
+                        <a href="">
+                            <i class="fa-solid fa-rocket"></i> Rocket
+                        </a>
+                    </div>
+                    <div class="icon-name">
+                        <a href="">
+                            <i class="fa-solid fa-scissors"></i> Scissor
+                        </a>
+                    </div>
+                    <div class="icon-name">
+                        <a href="">
+                            <i class="fa-solid fa-map-location"></i> Map-location
+                        </a>
+                    </div>
+                    <div class="icon-name">
+                        <a href="">
+                            <i class="fa-solid fa-bell"></i> Bell
+                        </a>
+                    </div>
+                    <div class="icon-name">
+                        <a href="">
+                            <i class="fa-solid fa-atom"></i> Atom
+                        </a>
+                    </div>
+                    <div class="icon-name">
+                        <a href="">
+                            <i class="fa-solid fa-basket-shopping"></i> Basket
+                        </a>
+                    </div>
+                    <div class="icon-name">
+                        <a href="">
+                            <i class="fa-solid fa-gear"></i> Setting
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <h4>Argon Dashboard Flask</h4>
+                <h4>@ Creative-Tim - coded by Appspeed</h4>
+            </footer>
+        </div>
+
+
+        <!-- ----------------P  A  G  E  3 / G O O G L E  ------------------------------>
+
+       <div id="google">
+    <div class="g-main">
+        <div class="g-content">
+            <h3>Google map</h3>
+            <a href="">
+                <i class="fa-solid fa-house"></i> <span>/ Maps / Google map</span>
+            </a>
+        </div>
+        <div class="g-button">
+            <a href="">New</a>
+            <a href="">Filter</a>
+        </div>
+    </div>
+
+    <!----------------------   M  A  P    ----------------------->
+    <div class="g-map">
+        <div class="g-location">
+            <iframe width="100%" height="100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.7876978564655!2d72.83761837503646!3d21.200591080492014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e57fb19791b%3A0xaf4f237f0fc9c413!2sBelgium%20Square%2C%20Ring%20Rd%2C%20Japan%20Market%2C%20Begampura%2C%20Surat%2C%20Gujarat%20395003!5e0!3m2!1sen!2sin!4v1717333589480!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <footer>
+        <h4>Argon Dashboard Flask</h4>
+        <h4>@ Creative-Tim - coded by Appspeed</h4>
+    </footer>
+       </div>
+
+
+        <!------------------P  A  G  E  4  / P  R  O  F  I  L  E  ---------------------->
+
+
+        <div id="profile">
+            <div class="banner">
+                <div class="main-box">
+                    <h1>Hello test</h1>
+                    <p>This is your profile page. You can see the progress you've made with your work and manage your projects or assigned tasks</p>
+                    <a href="">Edit Profile</a>
+                </div>
+                <div class="form-box">
+                    <div class="form">
+                        <h3>Edit Profile</h3>
+                        <p>USERNAME</p>
+                        <div class="form-username">
+                            <div class="label">
+                                <label for="">Username</label><br>
+                                <input type="text" placeholder="test">
+                            </div>
+                            <div class="label">
+                                <label for="">Email</label><br>
+                                <input type="text" placeholder="test">
+                            </div>
+                            <div class="label">
+                                <label for="">First-name</label><br>
+                                <input type="text" placeholder="test">
+                            </div>
+                            <div class="label">
+                                <label for="">Last-name</label><br>
+                                <input type="text" placeholder="test">
+                            </div>
+                        </div>
+                        
+
+
+                        <!------  F  O  R  M  2 ----------------->
+
+                        <p>CONTACT INFORMATION</p>
+                        <div class="form-username">
+                            <div class="label">
+                                <label for="">Address</label><br>
+                                <input type="text" placeholder="test">
+                            </div>
+                            <div class="label">
+                                <label for="">City</label><br>
+                                <input type="text" placeholder="test">
+                            </div>
+                            <div class="label">
+                                <label for="">Country</label><br>
+                                <input type="text" placeholder="test">
+                            </div>
+                            <div class="label">
+                                <label for="">Contact</label><br>
+                                <input type="text" placeholder="test">
+                            </div>
+                        </div>
+
+
+                        <!----------F  O  R  M  3 ------>
+
+                        <p>ABOUT ME</p>
+                        <div class="about-me">
+                            <label for="">About Me</label><br>
+                            <textarea name="" id="">A beautiful Dashboard for Bootstrap 4. It is Free and Open Source.</textarea>
+                        </div>
+                    </div>
+
+
+                    <!-------P  R  O  F  I  L  E -- C  A  R  D--------- -->
+
+                    <div class="p-card">
+                        <div class="photo-section">
+                            <div class="photo">
+                                <img width="100%" height="100%" src="./img/navlogo.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="p-content">
+                            <div class="b-1">
+                                <h3>22</h3>
+                                <p>Friend</p>
+                            </div>
+                            <div class="b-1">
+                                <h3>10</h3>
+                                <p>Photos</p>
+                            </div>
+                            <div class="b-1">
+                                <h3>89</h3>
+                                <p>Comment</p>
+                            </div>
+                        </div>
+                        <div class="p-col2">
+                            <p>test</p>
+                            <p>test@creative-tim.com</p>
+                            <h4>Solution Manager - Creative Tim Officer</h4>
+                            <h4>University of Computer Science</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!------------------ P  A  G  E  5  /  T  A  B  L  E  -------------------------->
+
+        <div id="table">
+            <div class="table-main">
+                <div class="table-content">
+                    <h3>Table</h3>
+                    <a href="">
+                        <i class="fa-solid fa-house"></i> <span>/ Table / Tables</span>
+                    </a>
+                </div>
+                <div class="table-button">
+                    <a href="">New</a>
+                    <a href="">Filter</a>
+                </div>
+            </div>
+
+            <!----------- T  A  B  L  E  B  O  X ------------------------>
+
+
+            <div class="table-box">
+                <div class="table-col">
+                    <h3>Light Table</h3>
+                    <table>
+                        <tr>
+                           <th id="th-title">PROJECT</th>
+                           <th id="th-title">BUDGET</th>
+                           <th id="th-title">STATUS</th>
+                           <th id="th-title">COMPLETION</th>
+                        </tr>
+                        <tr>
+                            <th id="th-icon">
+                                <div class="media">
+                                    <img  src="./img/tab.jpg" alt="">
+                                    <span>Argon Design System</span>
+                                </div>
+                            </th>
+                            <td>$2500 USD</td>
+                            <td>pending</td>
+                            <td>60%</td>
+                        </tr>
+                        <tr>
+                            <th id="th-icon">
+                                <div class="media">
+                                    <img src="./img/tab-img2.jpg" alt="">
+                                    <span>Argon Design System</span>
+                                </div>
+                            </th>
+                            <td>$1500 USD</td>
+                            <td> completed</td>
+                            <td>60%</td>
+                        </tr>
+                        <tr>
+                            <th id="th-icon">
+                                <div class="media">
+                                    <img src="./img/tab-img3.jpg" alt="">
+                                    <span>Argon Design System</span>
+                                </div>
+                            </th>
+                            <td>$2950 USD</td>
+                            <td>delayed</td>
+                            <td>60%</td>
+                        </tr>
+                        <tr>
+                            <th id="th-icon">
+                                <div class="media">
+                                    <img src="./img/tab-img4.jpg" alt="">
+                                    <span>Argon Design System</span>
+                                </div>
+                            </th>
+                            <td>$1800 USD</td>
+                            <td>on schedule</td>
+                            <td>60%</td>
+                        </tr>
+                        <tr>
+                            <th id="th-icon">
+                                <div class="media">
+                                    <img src="./img/tab-img5.jpg" alt="">
+                                    <span>Argon Design System</span>
+                                </div>
+                            </th>
+                            <td>$2500 USD</td>
+                            <td>pending</td>
+                            <td>60%</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <footer>
+                <h4>Argon Dashboard Flask</h4>
+                <h4>@ Creative-Tim - coded by Appspeed</h4>
+            </footer>
+        </div>
+
+
+
+        <!------------------ P  A  G  E  6  /  L  O  G  I  N  ------------------------->
+
+        <div id="login">
+            <div class="login-nav">
+                <div class="login-logo">
+                    <a href="">
+                        <img width="100%" height="100%" src="./img/logojquerywebp.webp" alt="">
+                    </a>
+                </div>
+                <div class="login-button">
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <button>More Starter</button>
+                </div>
+            </div>
+            
+            <!--L O G I N / H E A D I N G  -->
+
+            <div class="head">
+                <h1>Argon Dashboard Flask</h1>
+                <p>Open-Source Flask Starter with Argon Dashboard Design.</p>
+            </div>
+
+            <!---------- F O R M ----------->
+
+            <div class="form-main">
+                <div class="login-form">
+                    <div class="form-logo">
+                        <p>Sign in with </p>
+                        <a href=""><i class="fa-brands fa-github"></i>Github</a>
+                        <a href=""><i class="fa-brands fa-google"></i>Google</a>
+                    </div>
+                    <div class="login-info">
+                        <div class="login-info-head">
+                            <p>Sign with credential</p>
+                        </div>
+                        <div class="login-info-form">
+                            <div class="info-content">
+                                <i class="fa-solid fa-envelope"></i>
+                                <input type="text" placeholder="Email" required>
+                            </div>
+                            <div class="info-content">
+                                <i class="fa-solid fa-lock"></i>
+                                <input type="text" placeholder="Password" required>
+                            </div>
+                            <div class="checkbox">
+                                <label for=""><input type="checkbox">Remember</label>
+                            </div>
+                           <div class="login-info-button">
+                            <a href="">Sign In</a>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer id="ft-login">
+                <h4>Argon Dashboard Flask</h4>
+                <h4>@ Creative-Tim - coded by Appspeed</h4>
+            </footer>
+        </div>
+
+
+        <!------------------ P  A  G  E  7  / R  E  G  I  S  T  E  R  ------------------>
+
+
+        <div id="register">
+            <div class="register-nav">
+                <div class="register-logo">
+                    <a href="">
+                        <img width="100%" height="100%" src="./img/logojquerywebp.webp" alt="">
+                    </a>
+                </div>
+                <div class="register-button">
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <button>More Starter</button>
+                </div>
+            </div>
+            
+            <!--L O G I N / H E A D I N G  -->
+
+            <div class="regis-head">
+                <h1>Argon Dashboard Flask</h1>
+                <p>Open-Source Flask Starter with Argon Dashboard Design.</p>
+            </div>
+
+            <!---------- F O R M ----------->
+
+            <div class="register-main">
+                <div class="register-form">
+                    <div class="regis-logo">
+                        <p>Sign in with </p>
+                        <a href=""><i class="fa-brands fa-github"></i>Github</a>
+                        <a href=""><i class="fa-brands fa-google"></i>Google</a>
+                    </div>
+
+
+                    <div class="register-info">
+                        <div class="register-info-head">
+                            <p>Sign with credential</p>
+                        </div>
+
+                        <!--------------- I N P U T -1  --------------->
+
+                        <div class="register-info-form">
+                            <div class="register-info-content">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </div>
+                            <div class="register-info-input">
+                                <span>
+                                    <input type="text" placeholder="Name" required>
+                                </span>
+                            </div>
+                        </div>
+                        <!---------------- I N P U T-2  -------------->
+
+                        <div class="register-info-form">
+                            <div class="register-info-content">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="register-info-input">
+                                <span>
+                                    <input type="text" placeholder="Email" required>
+                                </span>
+                            </div>
+                        </div>
+
+                        <!------------ I N P U T-3  ----------------->
+
+                        <div class="register-info-form">
+                            <div class="register-info-content">
+                                <i class="fa-solid fa-lock"></i>
+                            </div>
+                            <div class="register-info-input">
+                                <span>
+                                    <input type="text" placeholder="Password" required>
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <!---------------C H E C K B O X  ----------->
+
+                            <div class="register-checkbox">
+                                <label for=""><input type="checkbox">
+                                    I agree with the 
+                                    <a href="">Privacy Policy</a>
+                                </label>
+                            </div>
+                        <!---------- B U T T O N  ------------------>
+
+                           <div class="register-info-button">
+                            <a href="">Create account</a>
+                           </div>
+                    </div>
+                </div>
+            </div>
+            <footer id="ft-register">
+                <h4>Argon Dashboard Flask</h4>
+                <h4>@ Creative-Tim - coded by Appspeed</h4>
+            </footer>
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="./script/calender.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
