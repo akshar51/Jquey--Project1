@@ -1292,12 +1292,6 @@ footer{
 
 @media (max-width:600px){
 
-    .popup{
-        position: absolute;
-        top: 50%;
-        left: auto;
-        margin: auto;
-    }
 
     #main{
         width: 100% !important;

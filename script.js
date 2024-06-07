@@ -84,6 +84,6 @@ var calendarInstance1 = new calendarJs("calendar", {
 
 
 
-//------------- P O P U P --------------------------
+
 
 
